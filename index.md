@@ -1,5 +1,6 @@
 1. [.DS_Store禁止生成、恢复生成、删除](#ds_store) 
 2. [Android ADB重启](#adb)
+3. [mac移动硬盘显示未挂载](#mac_unmount)
 
 <a id="ds_store"></a>
 ### .DS_Store禁止生成、恢复生成、删除
@@ -18,3 +19,12 @@
 ### adb服务重启
       先执行```adb kill-server```
       再执行```adb start-server```
+<a id="mac_unmount"></a>
+### mac中移动硬盘显示未挂载
+
+```
+1.ps aux|grep fsck
+2.sudo pkill -f fsck
+
+打开硬盘工具，选中移动硬盘，点击急救
+```
